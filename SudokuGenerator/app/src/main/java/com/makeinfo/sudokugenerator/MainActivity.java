@@ -18,8 +18,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.startapp.android.publish.StartAppAd;
-import com.startapp.android.publish.StartAppSDK;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -29,11 +27,11 @@ public class MainActivity extends ActionBarActivity {
     Button gen,copy;
     ProgressBar pb;
     int[][] bs = new int[9][9];
-    private StartAppAd startAppAd = new StartAppAd(this);
+   // private StartAppAd startAppAd = new StartAppAd(this);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        StartAppSDK.init(this, "112014756", "202241970", true);
+     //   StartAppSDK.init(this, "112014756", "202241970", true);
         setContentView(R.layout.activity_main);
         //ed = (EditText) findViewById(R.id.editText);
         tv = (EditText) findViewById(R.id.textView);
@@ -130,12 +128,12 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public void onResume() {
         super.onResume();
-        startAppAd.onResume();
+     
     }
     @Override
     public void onPause() {
         super.onPause();
-        startAppAd.onPause();
+    
     }
 
     @Override
