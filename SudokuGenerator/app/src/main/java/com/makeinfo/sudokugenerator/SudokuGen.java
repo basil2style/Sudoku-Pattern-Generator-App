@@ -7,6 +7,7 @@ import java.util.Set;
 
 /**
  * Created by Basil on 3/7/2015.
+ *Brute Force method to generate Sudoku pattern. slow in generation
  */
 public class SudokuGen {
     public static boolean checker(int[][] bs, int i, ArrayList<Integer> ar) {
